@@ -28,7 +28,7 @@
 <meta property="og:description" content="GitHub 仓库设置my-blog 仓库（Hexo 源码仓库） 放置你的 Markdown 文章、主题配置等 设置 GitHub Actions 自动生成博客并部署  ohzm.github.io 仓库（Pages 静态站点仓库） 仅托管 Hexo 构建生成的 public&#x2F; 目录的内容  不应包含源码、_config.yml、node_modules 等  设置：  打开仓库 → S">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-06-11T09:18:40.000Z">
-<meta property="article:modified_time" content="2025-06-11T07:24:14.302Z">
+<meta property="article:modified_time" content="2025-06-12T12:46:01.907Z">
 <meta property="article:author" content="Ohzm">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="GitHub Actions">
@@ -176,10 +176,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2025-06-11 09:18:40 / 修改时间：07:24:14" itemprop="dateCreated datePublished" datetime="2025-06-11T09:18:40+00:00">2025-06-11</time>
+              <time title="创建时间：2025-06-11 09:18:40" itemprop="dateCreated datePublished" datetime="2025-06-11T09:18:40+00:00">2025-06-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-12 12:46:01" itemprop="dateModified" datetime="2025-06-12T12:46:01+00:00">2025-06-12</time>
+              </span>
 
           
 
@@ -210,18 +216,12 @@
 </li>
 </ul>
 <h3 id="1-进入博客目录"><a href="#1-进入博客目录" class="headerlink" title="1. 进入博客目录"></a>1. 进入博客目录</h3><p>cd c:&#x2F;my-blog</p>
-<h3 id="2-新建一篇博客文章"><a href="#2-新建一篇博客文章" class="headerlink" title="2. 新建一篇博客文章"></a>2. 新建一篇博客文章</h3><p>npx hexo n “我的第一篇博客”</p>
-<p>成功后会创建一个文件，如：c:&#x2F;my-blog&#x2F;source&#x2F;_posts&#x2F;我的第一篇博客.md</p>
-<h3 id="3-编写博客内容"><a href="#3-编写博客内容" class="headerlink" title="3. 编写博客内容"></a>3. 编写博客内容</h3><p>打开该 .md 文件，例如用 VS Code：<br>code source&#x2F;_posts&#x2F;我的第一篇博客.md</p>
-<p>在其中填写 Markdown 内容后，保存关闭</p>
-<h3 id="4-预览博客效果（可选）"><a href="#4-预览博客效果（可选）" class="headerlink" title="4. 预览博客效果（可选）"></a>4. 预览博客效果（可选）</h3><p>npx hexo clean</p>
-<p>npx hexo g</p>
-<p>npx hexo s</p>
+<h3 id="2-新建一篇博客文章"><a href="#2-新建一篇博客文章" class="headerlink" title="2. 新建一篇博客文章"></a>2. 新建一篇博客文章</h3><p>npx hexo n “我的第一篇博客”<br>成功后会创建一个文件，如：c:&#x2F;my-blog&#x2F;source&#x2F;_posts&#x2F;我的第一篇博客.md</p>
+<h3 id="3-编写博客内容"><a href="#3-编写博客内容" class="headerlink" title="3. 编写博客内容"></a>3. 编写博客内容</h3><p>打开该 .md 文件，例如用 VS Code：<br>code source&#x2F;_posts&#x2F;我的第一篇博客.md<br>在其中填写 Markdown 内容后，保存关闭</p>
+<h3 id="4-预览博客效果（可选）"><a href="#4-预览博客效果（可选）" class="headerlink" title="4. 预览博客效果（可选）"></a>4. 预览博客效果（可选）</h3><p>npx hexo clean<br>npx hexo g<br>npx hexo s</p>
 <p>浏览器访问：<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 查看效果</p>
-<h3 id="5-添加变更到-Git-并提交-my-blog"><a href="#5-添加变更到-Git-并提交-my-blog" class="headerlink" title="5. 添加变更到 Git 并提交 (my-blog)"></a>5. 添加变更到 Git 并提交 (my-blog)</h3><p>git add .</p>
-<p>git commit -m “新增：第一篇博客文章”</p>
-<p>git push orign main</p>
-<p>自动触发 GitHub Actions（部署 public 到 ohzm.github.io</p>
+<h3 id="5-添加变更到-Git-并提交-my-blog"><a href="#5-添加变更到-Git-并提交-my-blog" class="headerlink" title="5. 添加变更到 Git 并提交 (my-blog)"></a>5. 添加变更到 Git 并提交 (my-blog)</h3><p>git add .<br>git commit -m “新增：第一篇博客文章”<br>git push orign main</p>
+<p>自动触发 GitHub Actions（部署 public 到 yourname.github.io）</p>
 <h3 id="7-检查部署是否成功"><a href="#7-检查部署是否成功" class="headerlink" title="7. 检查部署是否成功"></a>7. 检查部署是否成功</h3><p>打开 my-blog 仓库的 Actions 页面：</p>
 <ul>
 <li><p>查看是否触发了部署工作流</p>
@@ -229,8 +229,7 @@
 <li><p>确认是否成功运行 hexo g + 部署到 yourname.github.io</p>
 </li>
 </ul>
-<h3 id="8-查看线上博客"><a href="#8-查看线上博客" class="headerlink" title="8. 查看线上博客"></a>8. 查看线上博客</h3><p>打开浏览器访问：<br><a target="_blank" rel="noopener" href="https://yourname.github.io/">https://yourname.github.io</a></p>
-<p>你刚写的博客文章应该已经上线啦</p>
+<h3 id="8-查看线上博客"><a href="#8-查看线上博客" class="headerlink" title="8. 查看线上博客"></a>8. 查看线上博客</h3><p>打开浏览器访问：<br><a target="_blank" rel="noopener" href="https://yourname.github.io/">https://yourname.github.io</a><br>你刚写的博客文章应该已经上线啦</p>
 <h3 id="安装主题-NexT"><a href="#安装主题-NexT" class="headerlink" title="安装主题(NexT)"></a>安装主题(NexT)</h3><ol>
 <li><p>在 Hexo 博客根目录下执行：</p>
 <p>cd c:\my-blog</p>
@@ -242,13 +241,10 @@
 <p>theme: next</p>
 </li>
 <li><p>安装 NexT 推荐依赖（可选）</p>
-<p>这些依赖增强主题体验，如搜索、标签页支持等：</p>
-<p>npm install hexo-renderer-pug hexo-renderer-stylus –save</p>
+<p>这些依赖增强主题体验，如搜索、标签页支持等：<br>npm install hexo-renderer-pug hexo-renderer-stylus –save</p>
 </li>
 <li><p>本地预览确认主题已生效<br>运行以下命令，确认主题加载成功：</p>
-<p>npx hexo clean</p>
-<p>npx hexo generate</p>
-<p>npx hexo server</p>
+<p>npx hexo clean<br>npx hexo generate<br>npx hexo server</p>
 <p>打开浏览器访问 <a href="http://localhost:4000，应该看到">http://localhost:4000，应该看到</a> NexT 的默认样式界面</p>
 </li>
 </ol>
@@ -273,10 +269,13 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2025/06/11/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
+    <a href="/2025/06/04/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" rel="prev" title="我的第一篇博客">
+      <i class="fa fa-chevron-left"></i> 我的第一篇博客
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2025/06/12/hello-world/" rel="next" title="Hello World">
+      Hello World <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -349,7 +348,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
